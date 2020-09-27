@@ -5,12 +5,15 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: master
+name: OpenWrt-CI
 
 on:
-  schedule:
-    - cron: 0 20 * * *
-  release:
+  push:
+    branches: 
+      - master
+  # schedule:
+  #   - cron: 0 20 * * *
+
     types: [published]
 
 jobs:
